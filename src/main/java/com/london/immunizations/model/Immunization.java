@@ -5,10 +5,7 @@ import java.util.Date;
 public class Immunization {
     private Long id;
 
-    private String firstName;
-
-    private String lastName;
-
+    private Long childId;
     private String vaccineGroup;
 
     private int dose;
@@ -27,20 +24,12 @@ public class Immunization {
         return id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public Long getChildId() {
+        return childId;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setChildId(Long childId) {
+        this.childId = childId;
     }
 
     public String getVaccineGroup() {
